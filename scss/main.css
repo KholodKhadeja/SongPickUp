@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Tajawal;
+  width: 100%;
+  height: 100%;
+  background: rgb(252, 200, 69);
+  background: linear-gradient(90deg, rgba(252, 200, 69, 0.9843680758) 0%, rgb(252, 175, 69) 100%);
+}
+
+.mainContainer {
+  width: 90vw;
+  height: 90vh;
+  border: 1px solid black;
+  margin: 2rem auto;
+  padding: 1rem;
+  border-radius: 1rem;
+  background-color: rgba(255, 255, 255, 0.646);
+}
+
+header {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+#logo {
+  width: 5rem;
+}
+
+#addBtn {
+  height: 2.5rem;
+  padding: 0.5rem;
+  background-color: black;
+  color: #fcc845;
+  border-radius: 0.5rem;
+}
+
+hr {
+  width: 98%;
+  background-color: black;
+  margin: 0.5rem auto;
+}
+
+.lowerDivs {
+  display: flex;
+  flex-direction: row;
+}
+
+.leftContainer {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem !important;
+  padding: 1rem;
+}
+
+.verRule {
+  width: 0.05rem;
+  background-color: black;
+  height: 70vh;
+}
+
+.rightContainer {
+  width: 60%;
+  display: flex;
+  justify-content: center !important;
+  align-items: center !important;
+  padding: 1rem;
+}
+
+.songList {
+  background-color: white;
+  border-radius: 0.5rem;
+  height: 95%;
+  scroll-behavior: smooth;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.songImg {
+  width: 3rem;
+}
+
+.listItem {
+  background-color: rgba(252, 200, 69, 0.2117647059);
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+.listItem:hover {
+  cursor: pointer;
+  background-color: rgba(252, 200, 69, 0.4156862745);
+}
+
+#rndBtn {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 0.5rem;
+  background-color: black;
+  color: #fcc845;
+  border-radius: 0.5rem;
+}
+
+.instruction {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#info {
+  font-weight: bold;
+}
+
+button:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}/*# sourceMappingURL=main.css.map */
