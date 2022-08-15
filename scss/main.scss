@@ -5,7 +5,7 @@ body{
     font-family: Tajawal;
     width: 100%;height: 100%;
     background: rgb(252,200,69);
-background: linear-gradient(90deg, rgba(252,200,69,0.9843680758436187) 0%, rgba(252,175,69,1) 100%);
+    background: linear-gradient(90deg, rgba(252,200,69,0.9843680758436187) 0%, rgba(252,175,69,1) 100%);
 }
 .mainContainer{
 width: 90vw;
@@ -63,12 +63,12 @@ height: 70vh;
 .songList{
 background-color: white;
 border-radius: 0.5rem;
-height: 95%;
+max-height: 70%;
 scroll-behavior: smooth;
 padding: 1rem;
 display: flex;
-flex-direction: column;
-
+flex-direction: column;gap: 0.5rem;
+overflow-y:scroll;
 }
 .songImg{
     width: 3rem;
@@ -81,7 +81,6 @@ align-items: center;
 gap: 0.5rem;
 padding: 0.5rem;
 box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-
 &:hover{
     cursor: pointer;
     background-color: #fcc8456a;
@@ -110,4 +109,38 @@ button{
         opacity: 0.8;
         cursor: pointer;
     }
+}
+
+#popupContainer{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.505);
+    overflow:hidden !important;
+    display: flex;justify-content: center;align-items: center;
+}
+.hidden{
+    display: none;
+}
+.PopUp{
+    overflow:hidden !important;
+    padding: 0.2rem;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 80%;width: 80%;
+    background-color: white;
+}
+#xdiv{
+    width:100%; display: flex;
+    justify-content: flex-end;
+}
+#ximg{
+width: 2rem;
+color: black;
+margin: 0.5rem;
+cursor: pointer;
+}
+#iframeDiv{
+    height: 100%;width: 100%;
 }

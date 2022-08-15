@@ -76,11 +76,13 @@ hr {
 .songList {
   background-color: white;
   border-radius: 0.5rem;
-  height: 95%;
+  max-height: 70%;
   scroll-behavior: smooth;
   padding: 1rem;
   display: flex;
   flex-direction: column;
+  gap: 0.5rem;
+  overflow-y: scroll;
 }
 
 .songImg {
@@ -127,4 +129,48 @@ hr {
 button:hover {
   opacity: 0.8;
   cursor: pointer;
+}
+
+#popupContainer {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.505);
+  overflow: hidden !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hidden {
+  display: none;
+}
+
+.PopUp {
+  overflow: hidden !important;
+  padding: 0.2rem;
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 80%;
+  width: 80%;
+  background-color: white;
+}
+
+#xdiv {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+#ximg {
+  width: 2rem;
+  color: black;
+  margin: 0.5rem;
+  cursor: pointer;
+}
+
+#iframeDiv {
+  height: 100%;
+  width: 100%;
 }/*# sourceMappingURL=main.css.map */
