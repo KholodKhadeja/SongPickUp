@@ -9,7 +9,7 @@ body{
 }
 .mainContainer{
 width: 90vw;
-height: 90vh;
+max-height: 90vh;
 border: 1px solid black;
 margin: 2rem auto;
 padding: 1rem;
@@ -46,6 +46,7 @@ display: flex;
 flex-direction: column;
 gap: 0.5rem !important;
 padding: 1rem;
+max-height: 95% !important;
 }
 .verRule{
 width: 0.05rem;
@@ -56,19 +57,21 @@ height: 70vh;
     width: 60%;
     display: flex;
     justify-content: center !important;
-    align-items: center !important;
+align-items: center;
     padding: 1rem;
 }
 
 .songList{
 background-color: white;
 border-radius: 0.5rem;
-max-height: 70%;
+max-height: 60vh !important;
 scroll-behavior: smooth;
 padding: 1rem;
 display: flex;
 flex-direction: column;gap: 0.5rem;
 overflow-y:scroll;
+scrollbar-color: yellow!important;
+scrollbar-width: thin !important;
 }
 .songImg{
     width: 3rem;
@@ -102,7 +105,6 @@ box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
 #info{
     font-weight: bold;
-
 }
 button{
     &:hover{
@@ -119,7 +121,7 @@ button{
     display: flex;justify-content: center;align-items: center;
 }
 .hidden{
-    display: none;
+    display: none !important;
 }
 .PopUp{
     overflow:hidden !important;
@@ -128,7 +130,7 @@ button{
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 80%;width: 80%;
+    height: 90%;width: 80%;
     background-color: white;
 }
 #xdiv{
@@ -142,5 +144,6 @@ margin: 0.5rem;
 cursor: pointer;
 }
 #iframeDiv{
-    height: 100%;width: 100%;
+    width: 100%;
+    height: 100%;
 }
